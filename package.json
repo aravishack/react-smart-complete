@@ -1,0 +1,73 @@
+{
+  "name": "react-smart-complete",
+  "version": "1.0.0",
+  "description": "Gmail-style inline autocomplete component for React",
+  "author": "aravishack",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "autocomplete",
+    "smart-compose",
+    "inline-completion",
+    "textarea",
+    "suggestion",
+    "gmail",
+    "text-completion",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aravishack/react-smart-complete.git"
+  },
+  "homepage": "https://github.com/aravishack/react-smart-complete#readme",
+  "bugs": {
+    "url": "https://github.com/aravishack/react-smart-complete/issues"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.7.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  }
+}
