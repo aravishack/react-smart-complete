@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useRef, useEffect, useLayoutEffect, useCallback, useMemo, CSSProperties } from 'react';
+import { useRef, useEffect, useLayoutEffect, useCallback, CSSProperties } from 'react';
 import { SmartAutocompleteProps } from './types';
 import styles from './SmartAutocomplete.module.css';
 
